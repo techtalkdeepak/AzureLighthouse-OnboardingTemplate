@@ -1,0 +1,38 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mspName": {
+            "value": "Techtalk"
+        },
+        "mspOfferDescription": {
+            "value": "Techtalk Managed Services for Azure."
+        },
+        "managedByTenantId": {
+            "value": "Azure Active Directory Tenant ID"
+        },
+        "authorizations": {
+            "value": [
+                {
+                    "principalId": "Principal ID of the Group",
+                    "principalIdDisplayName": "Techtalk-Contributor",
+                    "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c"
+                                        
+                }, 
+
+		{
+                    "principalId": "Principal ID of the Group",
+                    "principalIdDisplayName": "Techtalk-Reader",
+                    "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7"
+
+                    
+                }
+
+		
+
+
+
+            ]
+        }
+    }
+}
